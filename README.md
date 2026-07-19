@@ -16,12 +16,14 @@ Hypervisor Bypass as a NixOS module based on DenuvOwO, LinUwUx and Pareidolia's 
     };
   }
   ```
+
 2. Enable in configuration:
   ```nix
   services.denuvo-hvb = {
     enable = true;
     
-    # everything auto-detected by default. Override as needed:
+    # configure as https://cs.rin.ru/forum/viewtopic.php?f=10&t=159989
+    # default values:
     # disableUmip = false;
     # cpuidFaultEmulation.enable = true;
     # cpuidFaultEmulation.autoLoad = true;
@@ -30,6 +32,8 @@ Hypervisor Bypass as a NixOS module based on DenuvOwO, LinUwUx and Pareidolia's 
   ```
 
 You'll need to add the input to modules. You can do this by adding `denuvo-hvb.nixosModules.default` to `modules` in `nixpkgs.lib.nixosSystem`.
+
+3. Rebuild system **and reboot**.
 
 
 ## More sources/based on
