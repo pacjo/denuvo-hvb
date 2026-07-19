@@ -29,6 +29,8 @@ Hypervisor Bypass as a NixOS module based on DenuvOwO, LinUwUx and Pareidolia's 
   };
   ```
 
+You'll need to add the input to modules. You can do this by adding `denuvo-hvb.nixosModules.default` to `modules` in `nixpkgs.lib.nixosSystem`.
+
 
 ## More sources/based on
 

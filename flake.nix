@@ -25,7 +25,7 @@
       # NixOS Module
       # ──────────────────────────────────────────────────────────
       nixosModules = {
-        denuvo-bypass = ./modules/denuvo-bypass.nix;
+        denuvo-bypass = ./modules/denuvo-hvb.nix;
         default = self.nixosModules.denuvo-bypass;
       };
 
